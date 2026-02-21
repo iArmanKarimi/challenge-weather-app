@@ -14,9 +14,6 @@ type Props = {
 		| "sunny";
 };
 
-const bg_small = "images/bg-today-small.svg";
-const bg_large = "images/bg-today-large.svg";
-
 const iconMap = {
 	sunny: "images/icon-sunny.webp",
 	drizzle: "images/icon-drizzle.webp",
@@ -34,7 +31,8 @@ export default function CityWeatherHeader({ city, date, degree, icon }: Props) {
 		<div
 			className={`flex flex-col items-center gap-1 w-full rounded-xl sm:rounded-2xl
 				aspect-square object-contain mt-5
-				bg-[url('${bg_small}')] sm:bg-[url('${bg_large}')]
+				bg-[url('images/bg-today-small.svg')] 
+				sm:bg-[url('images/bg-today-large.svg')]
 				bg-cover bg-center`}
 		>
 			<h1 className="text-3xl font-bold">{city}</h1>

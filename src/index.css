@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+	/* =========================
+     COLORS
+  ========================== */
+
+	/* Neutral */
+	--color-neutral-900: hsl(243 96% 9%);
+	--color-neutral-800: hsl(243 27% 20%);
+	--color-neutral-700: hsl(243 23% 24%);
+	--color-neutral-600: hsl(243 23% 30%);
+	--color-neutral-300: hsl(240 6% 70%);
+	--color-neutral-200: hsl(250 6% 84%);
+	--color-neutral-0: hsl(0 0% 100%);
+
+	/* Orange */
+	--color-orange-500: hsl(28 100% 52%);
+
+	/* Blue */
+	--color-blue-500: hsl(233 67% 56%);
+	--color-blue-700: hsl(248 70% 36%);
+
+	/* =========================
+     SEMANTIC TOKENS 
+  ========================== */
+
+	--color-bg: var(--color-neutral-900);
+	--color-surface: var(--color-neutral-800);
+	--color-text-primary: var(--color-neutral-0);
+	--color-text-secondary: var(--color-neutral-300);
+	--color-border: var(--color-neutral-700);
+
+	--color-primary: var(--color-blue-500);
+	--color-primary-hover: var(--color-blue-700);
+	--color-accent: var(--color-orange-500);
+
+	/* =========================
+     TYPOGRAPHY
+  ========================== */
+
+	--font-sans: "DM Sans", sans-serif;
+	--font-display: "Bricolage Grotesque", sans-serif;
+
+	--text-base: 18px;
+	/* Body copy */
+}

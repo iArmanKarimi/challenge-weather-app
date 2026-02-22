@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import SearchBar from "./components/SearchBar";
 import CityWeatherHeader from "./components/CityWeatherHeader";
 import TitleHeader from "./components/TitleHeader";
+import StatWidgetGroup from "./components/StatWidgetGroup";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				degree={68}
 				icon="sunny"
 			/>
+			<StatWidgetGroup />
 		</Layout>
 	);
 }

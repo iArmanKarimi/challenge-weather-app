@@ -1,3 +1,4 @@
+import Layout from "./Layout";
 import TopBar from "./components/TopBar";
 import Button from "./components/Button";
 import SearchBar from "./components/SearchBar";
@@ -6,7 +7,7 @@ import TitleHeader from "./components/TitleHeader";
 
 function App() {
 	return (
-		<div className="bg-bg h-screen w-screen p-4 flex flex-col gap-3">
+		<Layout>
 			<TopBar />
 			<TitleHeader />
 			<SearchBar />
@@ -17,7 +18,7 @@ function App() {
 				degree={68}
 				icon="sunny"
 			/>
-		</div>
+		</Layout>
 	);
 }
 

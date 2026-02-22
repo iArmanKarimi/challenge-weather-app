@@ -1,7 +1,7 @@
 export default function SearchBar() {
 	return (
 		<div
-			className="flex items-center py-1 px-4 w-full sm:w-[50%]
+			className="flex items-center px-4 w-full sm:w-[50%]
 		bg-surface rounded-lg focus-within:ring-2 focus-within:ring-white
 		"
 		>
@@ -9,7 +9,7 @@ export default function SearchBar() {
 			<input
 				type="text"
 				placeholder="Search for a place..."
-				className="w-full sm:w-64 px-4 py-2 rounded-lg text-white
+				className="w-full sm:w-64 px-4 py-2 rounded-lg text-text-secondary
 				focus:outline-none "
 			/>
 		</div>

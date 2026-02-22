@@ -2,8 +2,7 @@ export default function SearchBar() {
 	return (
 		<div
 			className="flex items-center px-4 w-full sm:w-[50%]
-		bg-surface rounded-lg focus-within:ring-2 focus-within:ring-white
-		"
+		bg-surface rounded-lg focus-within:ring-2 focus-within:ring-white"
 		>
 			<img src="images/icon-search.svg" alt="" />
 			<input

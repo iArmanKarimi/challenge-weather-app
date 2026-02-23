@@ -2,9 +2,11 @@ import Layout from "./Layout";
 import TopBar from "./components/TopBar";
 import Button from "./components/Button";
 import SearchBar from "./components/SearchBar";
-import CityWeatherHeader from "./components/CityWeatherHeader";
 import TitleHeader from "./components/TitleHeader";
+import DailyForecast from "./components/DailyForecast";
+import HourlyForecast from "./components/HourlyForecast";
 import StatWidgetGroup from "./components/StatWidgetGroup";
+import CityWeatherHeader from "./components/CityWeatherHeader";
 
 function App() {
 	return (
@@ -20,6 +22,8 @@ function App() {
 				icon="sunny"
 			/>
 			<StatWidgetGroup />
+			<DailyForecast />
+			<HourlyForecast />
 		</Layout>
 	);
 }

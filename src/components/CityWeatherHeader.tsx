@@ -30,7 +30,7 @@ export default function CityWeatherHeader({ city, date, degree, icon }: Props) {
 	return (
 		<div
 			className={`flex flex-col items-center justify-center 
-				gap-1 w-full rounded-xl sm:rounded-2xl
+				gap-1 w-full rounded-xl sm:rounded-2xl px-8
 				mt-4 min-h-55 text-center
 				bg-[url('images/bg-today-small.svg')] 
 				sm:bg-[url('images/bg-today-large.svg')]

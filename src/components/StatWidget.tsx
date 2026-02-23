@@ -9,12 +9,9 @@ export default function StatWidget({
 }) {
 	return (
 		<WidgetSurface>
-			<div
-				className="flex flex-col gap-3 px-4 py-3
-				border border-border rounded-md h-full w-full"
-			>
+			<div className="flex flex-col gap-3 px-4 py-3 h-full w-full">
 				<span className="text-sm text-text-secondary">{label}</span>
-				<span className="text-lg font-thin">{value}</span>
+				<span className="text-2xl font-extralight">{value}</span>
 			</div>
 		</WidgetSurface>
 	);

@@ -1,3 +1,5 @@
+import { getWeatherIcon } from "../util/weatherIcon";
+
 type Props = {
 	city: string;
 	date: string;
@@ -14,23 +16,11 @@ type Props = {
 		| "sunny";
 };
 
-const iconMap = {
-	sunny: "images/icon-sunny.webp",
-	drizzle: "images/icon-drizzle.webp",
-	fog: "images/icon-fog.webp",
-	overcast: "images/icon-overcast.webp",
-	"partly-cloudy": "images/icon-partly-cloudy.webp",
-	rain: "images/icon-rain.webp",
-	cloudy: "images/icon-cloudy.webp",
-	snow: "images/icon-snow.webp",
-	storm: "images/icon-storm.webp",
-} satisfies Record<Props["icon"], string>;
-
 export default function CityWeatherHeader({ city, date, degree, icon }: Props) {
 	return (
 		<div
 			className={`flex flex-col items-center justify-center 
-				gap-1 w-full rounded-xl sm:rounded-2xl px-8
+				gap-1 w-full rounded-xl sm:rounded-2xl px-4
 				mt-4 min-h-55 text-center
 				bg-[url('images/bg-today-small.svg')] 
 				sm:bg-[url('images/bg-today-large.svg')]
@@ -39,7 +29,7 @@ export default function CityWeatherHeader({ city, date, degree, icon }: Props) {
 			<h1 className="text-3xl font-bold">{city}</h1>
 			<p className="text-sm text-text-secondary">{date}</p>
 			<div className="flex flex-row items-center justify-center mt-4">
-				<img className="w-20" src={iconMap[icon]} alt={icon} />
+				<img className="w-20" src={getWeatherIcon(icon)} alt={icon} />
 				<p className="text-7xl font-semibold italic mr-5">{degree}°</p>
 			</div>
 		</div>

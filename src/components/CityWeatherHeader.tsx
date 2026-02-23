@@ -1,19 +1,10 @@
-import { getWeatherIcon } from "../util/weatherIcon";
+import { getWeatherIcon, type WeatherIcon } from "../util/weatherIcon";
 
 type Props = {
 	city: string;
 	date: string;
 	degree: number;
-	icon:
-		| "drizzle"
-		| "fog"
-		| "overcast"
-		| "partly-cloudy"
-		| "rain"
-		| "cloudy"
-		| "snow"
-		| "storm"
-		| "sunny";
+	icon: WeatherIcon;
 };
 
 export default function CityWeatherHeader({ city, date, degree, icon }: Props) {

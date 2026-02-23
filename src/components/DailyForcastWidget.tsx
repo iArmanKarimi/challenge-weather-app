@@ -1,10 +1,12 @@
 import WidgetSurface from "./WidgetSurface";
+import { type WeatherIcon, getWeatherIcon } from "../util/weatherIcon";
 
 type Props = {
 	day: string;
+	icon: WeatherIcon;
 };
 
-export default function DailyForecastWidget({ day }: Props) {
+export default function DailyForecastWidget({ day, icon }: Props) {
 	return (
 		<WidgetSurface>
 			<div
@@ -13,6 +15,7 @@ export default function DailyForecastWidget({ day }: Props) {
 			>
 				{day}
 			</div>
+			<img src={getWeatherIcon(icon)} alt="icon" />
 		</WidgetSurface>
 	);
 }

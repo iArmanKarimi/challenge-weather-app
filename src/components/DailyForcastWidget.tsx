@@ -22,7 +22,11 @@ export default function DailyForecastWidget({
 			>
 				{day}
 			</div>
-			<img src={getWeatherIcon(icon)} alt="icon" />
+			<img
+				className="size-15 sm:size-20 mx-auto"
+				src={getWeatherIcon(icon)}
+				alt="icon"
+			/>
 			<div className="flex flex-row px-2 mb-2">
 				<span className="text-sm sm:text-lg">{degreeHigh}°</span>
 				<span className="text-sm sm:text-lg ml-auto">{degreeLow}°</span>

@@ -1,6 +1,5 @@
 import Layout from "./Layout";
 import TopBar from "./components/TopBar/TopBar";
-import Button from "./components/Common/Button";
 import SearchBar from "./components/Search/SearchBar";
 import Title from "./components/Title/Title";
 import DailyForecast from "./components/DailyForecast/DailyForecast";
@@ -14,7 +13,6 @@ function App() {
 			<TopBar />
 			<Title />
 			<SearchBar />
-			<Button text="Search" />
 			<WeatherLocation
 				city="Berlin, Germany"
 				date="Mon, 12 Jun 2023"

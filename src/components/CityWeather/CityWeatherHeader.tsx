@@ -8,7 +8,7 @@ type Props = {
 	icon: WeatherIcon;
 };
 
-export default function WeatherLocation({ city, date, degree, icon }: Props) {
+export default function CityWeatherHeader({ city, date, degree, icon }: Props) {
 	return (
 		<div
 			className={`flex flex-col items-center justify-center 

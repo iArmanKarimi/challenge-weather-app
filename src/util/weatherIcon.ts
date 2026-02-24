@@ -1,12 +1,4 @@
-export type WeatherIcon =
-	| "drizzle"
-	| "fog"
-	| "overcast"
-	| "partly-cloudy"
-	| "rain"
-	| "snow"
-	| "storm"
-	| "sunny";
+import type { WeatherIcon } from "../Types/WeatherIcon";
 
 export const weatherIconMap: Record<WeatherIcon, string> = {
 	drizzle: "images/icon-drizzle.webp",
@@ -19,5 +11,5 @@ export const weatherIconMap: Record<WeatherIcon, string> = {
 	sunny: "images/icon-sunny.webp",
 };
 
-export const getWeatherIcon = (icon: WeatherIcon) =>
+export const getWeatherIconPath = (icon: WeatherIcon) =>
 	weatherIconMap[icon];

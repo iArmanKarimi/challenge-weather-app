@@ -1,5 +1,6 @@
-import WidgetSurface from "../Common/WidgetSurface";
-import { type WeatherIcon, getWeatherIcon } from "../../util/weatherIcon";
+import WidgetSurface from "../Common/WidgetCard";
+import { getWeatherIconPath } from "../../Util/weatherIcon";
+import type { WeatherIcon } from "../../Types/WeatherIcon";
 
 type Props = {
 	day: string;
@@ -24,7 +25,7 @@ export default function DailyForecastWidget({
 			</div>
 			<img
 				className="size-15 sm:size-20 mx-auto"
-				src={getWeatherIcon(icon)}
+				src={getWeatherIconPath(icon)}
 				alt="icon"
 			/>
 			<div className="flex flex-row px-2 mb-2">

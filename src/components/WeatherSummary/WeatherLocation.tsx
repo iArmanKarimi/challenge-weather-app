@@ -1,4 +1,4 @@
-import { getWeatherIcon, type WeatherIcon } from "../util/weatherIcon";
+import { getWeatherIcon, type WeatherIcon } from "../../util/weatherIcon";
 
 type Props = {
 	city: string;
@@ -7,7 +7,7 @@ type Props = {
 	icon: WeatherIcon;
 };
 
-export default function CityWeatherHeader({ city, date, degree, icon }: Props) {
+export default function WeatherLocation({ city, date, degree, icon }: Props) {
 	return (
 		<div
 			className={`flex flex-col items-center justify-center 

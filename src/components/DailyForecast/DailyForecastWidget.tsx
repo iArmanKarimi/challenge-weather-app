@@ -1,5 +1,5 @@
-import WidgetSurface from "./WidgetSurface";
-import { type WeatherIcon, getWeatherIcon } from "../util/weatherIcon";
+import WidgetSurface from "../Common/WidgetSurface";
+import { type WeatherIcon, getWeatherIcon } from "../../util/weatherIcon";
 
 type Props = {
 	day: string;

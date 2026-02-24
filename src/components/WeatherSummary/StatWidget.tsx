@@ -1,4 +1,4 @@
-import WidgetSurface from "./WidgetSurface";
+import WidgetSurface from "../Common/WidgetSurface";
 
 export default function StatWidget({
 	value,

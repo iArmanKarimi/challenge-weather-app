@@ -1,4 +1,4 @@
-import DailyForecastWidget from "./DailyForcastWidget";
+import DailyForecastWidget from "./DailyForecastWidget";
 
 const weekdays = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
 
